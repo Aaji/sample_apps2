@@ -1,6 +1,10 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
+gem 'spork'
+gem 'rspec-core'
+gem 'autotest', '4.4.6'
+gem 'autotest-rails', '4.1.2'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -8,6 +12,9 @@ gem 'rails', '3.2.11'
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails'
+  gem 'webrat'
+  gem 'capybara'
+  gem 'ZenTest', '4.9.3'
 end
 group :production do
   gem 'pg'
